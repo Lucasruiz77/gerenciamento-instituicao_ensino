@@ -1,0 +1,18 @@
+ Na Semana 03, finalizamos o desenvolvimento da navegação de nosso sistema utilizando estruturas de repetição e estruturas condicionais.
+Agora chegou a hora de utilizarmos listas e entradas de dados para construirmos algumas das funcionalidades do menu de operações, como a inclusão e a listagem de estudantes. Vamos lá?
+O que devo desenvolver?
+⦁	Desenvolva as funcionalidades de incluir e listar estudantes
+⦁	Apenas o nome do estudante deve ser perguntado ao usuário (o restante das informações será inserido na próxima etapa da atividade).
+⦁	Os nomes dos estudantes devem ser armazenados em uma lista.
+⦁	Para a funcionalidade de listar, deve ser utilizada uma estrutura de repetição para percorrer a lista e mostrar os nomes cadastrados – vide Figura 1.
+⦁	Caso a lista de estudantes esteja vazia quando a opção de listar for acionada, deve-se mostrar uma mensagem “Não há estudantes cadastrados”.
+⦁	Caso o usuário selecione as opções professores, disciplinas, turmas ou matrículas no menu principal, o sistema deve mostrar a mensagem “EM DESENVOLVIMENTO”, e mostrar novamente o menu principal.
+⦁	Caso o usuário selecione as opções atualizar ou excluir no menu de operações do estudante, o sistema deve mostrar a mensagem “EM DESENVOLVIMENTO”, e mostrar novamente o menu de operações.
+
+ 
+Figura 1: Exemplo de inclusão e listagem de estudantes
+Informações adicionais
+Você deverá entregar o código-fonte da implementação inicial do sistema, devidamente comentado e estruturado em um único arquivo. Este deve conter seu nome e curso no cabeçalho do arquivo, em um bloco de comentário.
+Você deverá entregar código em Python, com a extensão .py, ou em arquivo compactado .zip. O arquivo deverá ser postado até a data-limite.
+Conte com a gente e bons estudos!
+

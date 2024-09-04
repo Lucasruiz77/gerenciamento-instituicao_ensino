@@ -1,7 +1,7 @@
-
+'''
+Verifica se a primeira interação do menu principal é valida, ou se o usuario deseja sair.
+'''
 while True:
-
-
 
     print ("---- MENU PRINCIPAL ----\n")
     print ("[1] Gerenciar Estudantes.")

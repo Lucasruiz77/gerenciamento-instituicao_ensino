@@ -1,8 +1,21 @@
-estudantes = []
+'''
+Lucas Henrique Oliveira Ruiz | Análise e Desenvolvimento de Sistemas
+'''
 
+
+
+#Criação de uma variavel para armazenar a listagem de alunos 
+
+estudantes = [] 
+
+# Primeiro while verificando uma condição verdadeira no primeiro menu
+
+    #Print do menu principal
 
 
 while True:
+
+    #Print do menu principal
 
     print ("---- MENU PRINCIPAL ----\n")
     print ("[1] Gerenciar Estudantes.")
@@ -12,46 +25,67 @@ while True:
     print ("[5] Gerenciar Matrículas") 
     print ("[9] Sair\n")
 
+    #Pergunta ao usuario qual a opção deseja dentro do menu principal
+
     opcao = int(input("Informe a opção desejada: "))
+
+    
+
+    #Segundo While verifica uma condição verdadeira no menu de operações
+
 
     while True:
         if opcao == 1:
             print ("\n\n***** [ESTUDANTES] MENU DE OPERAÇÕES *****\n")             
         elif opcao == 2:
-            print ("\n\n***** [DISCIPLINAS] MENU DE OPERAÇÕES *****\n")            
+            print ("\n\nEM DESENVOLVIMENTO\n") 
+            break           
         elif opcao == 3:
-            print ("\n\n***** [PROFESSORES] MENU DE OPERAÇÕES *****\n")             
+            print ("\n\nEM DESENVOLVIMENTO\n")  
+            break           
         elif opcao == 4:
-            print ("\n\n***** [TURMAS] MENU DE OPERAÇÕES *****\n")
-        elif opcao == 9:
+            print ("\n\nEM DESENVOLVIMENTO\n")
+            break
+        elif opcao == 9: ###! NÃO PODE ESTÁR DENTRO DO SEGUNDO WHILE, PQ NÃO FINALIZA A APLICAÇÃO.
             break   
         else:
-            print("\n\nOpção inválida")
+            print("\n\nOpção inválida") 
+
+        #Print do menu secúndário após perguntar a condição acima, a condição dita o cabeçalho.
 
         print ("[1] Incluir.")
         print ("[2] Listar.")
         print ("[3] Atualizar.")
         print ("[4] Excluir.")
         print ("[9] Voltar ao menu principal.\n")
-        acao = int(input("Informe a ação desejada: "))
 
-        if acao == 1: 
+        #Pergunta a ação que o usuario deseja no menu secúndario
+
+        acao = int(input("Informe a ação desejada: ")) 
+
+        #Criação de uma condição para a escolha da ação
+
+        if acao == 1: #Condição inclui cada aluno digitado na lista da variavel estudantes = []
             print("\n\n===== INCLUSÃO =====\n")
-            nome = input("Informe o nome do Estudante: ")
-            print ("Pressione ENTER para continuar")
+            nome = input("Informe o nome do Estudante: \nPressione ENTER para continuar")
             estudantes.append(nome)
-        elif acao == 2:
+        elif acao == 2: #Condição printa os alunos que estão dentro da lista estudantes = [], caso não tenha alunos cadastrados será printado a frase "Não há estudantes cadastrados."
             print("\n\n===== LISTAGEM =====\n")
             for i in estudantes:
-                print (i)    
+                print (i)
+            if len(estudantes) == 0:
+                    print ("Não há estudantes cadastrados.")    
         elif acao == 3:
-            print("\n\n===== ATUALIZAÇÃO =====\n")
+            print("\n\nEM DESENVOLVIMENTO\n")
+            break
         elif acao == 4:
-            print("\n\n===== EXCLUSÃO =====\n")
+            print("\n\nEM DESENVOLVIMENTO\n")
+            break
         elif acao == 9:
             print("\n\nVocê voltou para o menu principal\n")
             break
         else:
-            print("\n\nOpção incorreta!")
+            print("\n\nOpção inválida!")
 
-    print ("\nFinalizando a aplicação...")
+#Finaliza o código
+print ("Finalizando a aplicação...")
